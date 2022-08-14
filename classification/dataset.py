@@ -31,7 +31,7 @@ print("mean:", np.mean(len0), ',', np.mean(len1))
 print("std:", np.std(len0), ',', np.std(len1))
 
 print("long:", np.sum(len0 > 274) + np.sum(len1 > 274))
-'''
+
 random.shuffle(raw)
 rate = 0.8
 length = int(len(raw) * rate)
@@ -49,4 +49,4 @@ with open('dataset/test.csv', 'w', newline='', encoding="utf-8") as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',')
     for row in test:
         spamwriter.writerow(row)
-'''
+
